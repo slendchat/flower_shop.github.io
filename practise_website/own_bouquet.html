@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/styles.css">
+  <link rel="stylesheet" href="style/custom_bouquet.css">
+  <title>Create your own bouquet</title>
+</head>
+<body>
+  <div class="menuWrapper">
+    <div class="menuFloat">
+      <div class="menuLeft">
+        <div class="menuLeftLogo">Flowers</div>
+        <a href="index.html" class="menuitem">Главная</a>
+        <a href="index.html#flowers" class="menuitem">Букеты</a>
+        <a href="own_bouquet.html" class="menuitem">Собрать букет</a>
+      </div>
+  
+      <div class="menuRight">
+  
+      </div>
+    </div>
+  </div>
+  <div class="containerMain" style="margin-top: 100px; padding: 10px;">
+    <h1>Создайте свой букет</h1>
+    <p>Design your perfect bouquet by selecting from a variety of flowers and packaging options.</p>
+  
+    <h2>Выбор цветов</h2>
+    <div class="flower-container">
+      <div class="flower-item">
+        <h3>Розы</h3>
+        <img src="img\rose.jpg" alt="Roses">
+        <div class="flower-actions">
+          <button onclick="addToBouquet('roses')">Добавить розы</button>
+          <input type="number" id="roses-qty" name="roses-qty" min="1" placeholder="Qty">
+        </div>
+      </div>
+  
+      <div class="flower-item">
+        <h3>Тюльпаны</h3>
+        <img src="img\tulip.jpg" alt="Tulips">
+        <div class="flower-actions">
+          <button onclick="addToBouquet('tulips')">Добавить тюльпаны</button>
+          <input type="number" id="tulips-qty" name="tulips-qty" min="1" placeholder="Qty">
+        </div>
+      </div>
+  
+      <div class="flower-item">
+        <h3>Ромашки</h3>
+        <img src="img\daisies.jpg" alt="daisies">
+        <div class="flower-actions">
+          <button onclick="addToBouquet('daisies')">Добавить ромашки</button>
+          <input type="number" id="daisies-qty" name="daisies-qty" min="1" placeholder="Qty">
+        </div>
+      </div>
+    </div>
+  
+    <h2>Опции упаковки</h2>
+    <div class="packaging-container">
+      <div class="packaging-item">
+        <h3>Обычная упаковка</h3>
+        <img src="https://example.com/classic-wrap.jpg" alt="Обычная упаковка">
+        <button onclick="choosePackaging('classic')">Выбрать Обычная упаковка</button>
+      </div>
+  
+      <div class="packaging-item">
+        <h3>Эко упаковка</h3>
+        <img src="https://example.com/eco-wrap.jpg" alt="Эко упаковка">
+        <button onclick="choosePackaging('eco')">Выбрать Эко упаковка</button>
+      </div>
+  
+      <div class="packaging-item">
+        <h3>Дорогая упаковка</h3>
+        <img src="https://example.com/luxury-wrap.jpg" alt="Дорогая упаковка">
+        <button onclick="choosePackaging('luxury')">Выбрать Дорогая упаковка</button>
+      </div>
+    </div>
+  
+    <h2>Ваш уникальный букет</h2>
+    <div id="bouquet-summary">
+      <h3>Ваш букет:</h3>
+      <ul id="bouquet-list"></ul>
+      <h4>Упаковка:</h4>
+      <p id="chosen-packaging">Упаковка не выбрана</p>
+      <button onclick="reviewOrder()">Подтвердить и заказать</button>
+    </div>
+
+
+
+  </div>
+    <footer>
+      <div class="social-links">
+        <a href="https://www.facebook.com/slendchat/?locale=ru_RU" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+        <a href="https://www.youtube.com/channel/UCibU1sTxFNn7PoGKFuuFFwA" target="_blank"><img src="img/YouTube.png" alt="YouTube"></a>
+        <a href="https://www.instagram.com/lure87011/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+      </div>
+      
+      <div class="rules-policy">
+        <p><a href="about.html">Правила использования сайта</a> | <a href="privacy.html">Политика конфиденциальности</a></p>
+      </div>
+      
+      <div class="contact-info">
+        <p>Контактная информация: artmamaliga8@gmail.com</p>
+      </div>
+    </footer>
+
+<script src="script/script.js"></script>
+<script src="/script/custom_bouquet.js"></script>
+</body>
+</html>
